@@ -1,19 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navigation from './Navigation';
-import Content from './Content';
+import Navigation from './components/Navigation';
+import Manual from './components/Manual';
 
-function App() {
+const App = () => {
   return (
     <div className="fill-window">
       <Navigation />
-      
-      
-
+      <Manual />
     </div>
     
   );
 }
-
 export default App;
