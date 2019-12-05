@@ -11,6 +11,13 @@ import Menu from './Menu'
 import Elvis from './Elvis';
 import Contentstation from './Contentstation';
 import Brixwire from './Brixwire';
+import Journaldesigner from './Journaldesigner';
+import Journalbrowser from './Journalbrowser';
+import Indesign from './Indesign';
+import Madetoprint from './Madetoprint';
+import Claro from './Claro';
+import Imageworkflow from './Imageworkflow';
+import Sternwaldcockpit from './Sternwaldcockpit';
 
 class Navigation extends Component {
     constructor(props) {
@@ -44,6 +51,20 @@ class Navigation extends Component {
                 return <Contentstation isFrench={this.state.isFrench} />
             }else if (content === 'brixwire'){
                 return <Brixwire isFrench={this.state.isFrench} />
+            }else if (content === 'journaldesigner'){
+                return <Journaldesigner isFrench={this.state.isFrench} />
+            }else if (content === 'journalbrowser'){
+                return <Journalbrowser isFrench={this.state.isFrench} />
+            }else if (content === 'indesign'){
+                return <Indesign isFrench={this.state.isFrench} />
+            }else if (content === 'madetoprint'){
+                return <Madetoprint isFrench={this.state.isFrench} />
+            }else if (content === 'claro'){
+                return <Claro isFrench={this.state.isFrench} />
+            }else if (content === 'imageworkflow'){
+                return <Imageworkflow isFrench={this.state.isFrench} />
+            }else if (content === 'sternwaldcockpit'){
+                return <Sternwaldcockpit isFrench={this.state.isFrench} />
             }else{
                 return <p>HOME PAGE</p>
             }
@@ -66,17 +87,23 @@ class Navigation extends Component {
                     </NavDropdown>
 
                     <NavDropdown title="Layout" id="basic-nav-dropdown">
-                        <NavDropdown.Item id="journaldesigner">Journal Designer</NavDropdown.Item>  
-                        <NavDropdown.Item id="journalbrowser">Journal Browser</NavDropdown.Item>
-                        <NavDropdown.Item id="indesign">inDesign</NavDropdown.Item>
-                        <NavDropdown.Item id="madetoprint">MadeToPrint</NavDropdown.Item>
+                        <NavDropdown.Item onClick={() => this.setContent('journaldesigner')}>Journal Designer</NavDropdown.Item>  
+                        <NavDropdown.Item onClick={() => this.setContent('journalbrowser')}>Journal Browser</NavDropdown.Item>
+                        <NavDropdown.Item onClick={() => this.setContent('indesign')}>inDesign</NavDropdown.Item>
+                        <NavDropdown.Item onClick={() => this.setContent('madetoprint')}>MadeToPrint</NavDropdown.Item>
                     </NavDropdown>                
 
                     <NavDropdown title="Image Workflow" id="basic-nav-dropdown">
-                        <NavDropdown.Item id="claro">Claro</NavDropdown.Item>
-                        <NavDropdown.Item id="ImageWorkflow">ImageWorkflow</NavDropdown.Item>
+                        <NavDropdown.Item onClick={() => this.setContent('claro')}>Claro</NavDropdown.Item>
+                        <NavDropdown.Item onClick={() => this.setContent('imageworkflow')}>ImageWorkflow</NavDropdown.Item>
                     </NavDropdown>
+
+                    <NavDropdown title="Epaper" id="basic-nav-dropdown">
+                        <NavDropdown.Item onClick={() => this.setContent('sternwaldcockpit')}>Sternwald Cockpit</NavDropdown.Item>
+                    </NavDropdown>
+
                     </Nav>
+
                     <Menu actualLanguage={actualLanguage} handleToggleLanguage={this.handleToggleLanguage} />
                         
                     <Form inline>
@@ -97,123 +124,6 @@ class Navigation extends Component {
         )
     }
 }
-
-
-
-{/*function Elvis(){
-    if (language = 1) {
-        return(
-            <p>IFrame Elvis Manual DE</p>
-        )
-        } else {
-        return(
-            <p>IFrame Elvis Manual FR</p>
-        )
-        }
-}
-
-function Contentstation(){
-    if (language = 1) {
-        return(
-            <p>IFrame Contentstation Manual DE</p>
-        )
-        } else {
-        return(
-            <p>IFrame Contentstation Manual FR</p>
-        )
-        }
-}
-
-function Brixwire(){
-    if(language = 1){
-        return(
-            <p>IFrame Brixwire Manual DE</p>
-        )
-    } else {
-        return(
-            <p>IFrame Brixwire Manual FR</p>
-        )
-    }
-}*/}
-
-{/*}
-var language;
-
-class Menu extends React.Component{
-    constructor(props) {
-        super(props);
-        this.handleDeToFr = this.handleDeToFr.bind(this);
-        this.handleFrToDe = this.handleFrToDe.bind(this);
-        this.state = {isFrench: false};
-      }
-    
-      handleDeToFr() {
-        this.setState({isFrench: true});
-      }
-    
-      handleFrToDe() {
-        this.setState({isFrench: false});
-      }
-    
-      render() {
-        const isFrench = this.state.isFrench;
-        let button;
-    
-        if (isFrench) {
-          button = <FrenchButton onClick={this.handleFrToDe} />;
-          
-          language = 1;
-        } else {
-          button = <GermanButton onClick={this.handleDeToFr} />;
-          language = 2;
-        }
-    
-        return (
-        <div>
-          <div>
-            <Greeting isFrench={isFrench} />
-          </div>
-        <div> {button} {language} </div>
-        
-        </div>
-        
-        );
-      }
-    }
-
-    function GermanGreeting(props) {
-      return <p>Language: German</p>;
-    }
-
-    function FrenchGreeting(props) {
-      return <p>Language: French</p>;
-    }
-
-    function Greeting(props) {
-      const isFrench = props.isFrench;
-      if (isFrench) {
-        return <GermanGreeting />;
-      }
-      return <FrenchGreeting />;
-    }
-
-    function GermanButton(props) {
-      return (
-        <button onClick={props.onClick}>
-          German
-        </button>
-      );
-    }
-
-    function FrenchButton(props) {
-      return (
-        <button onClick={props.onClick}>
-          French
-        </button>
-      );
-    }
-
-*/}
 
 export default Navigation;
 

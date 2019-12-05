@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Elvis = ({ isFrench }) => {
+const Imageworkflow = ({ isFrench }) => {
 
     const language = isFrench ? 'FR' : 'DE'
     if (language === 'FR') {
         return(
-            <p>IFrame Elvis FR</p>
+            <p>IFrame Imageworkflow FR</p>
         )
         } else {
         return(
-            <p>IFrame Elvis DE</p>
+            <p>IFrame Imageworkflow DE</p>
         )
         }
 }
 
-export default Elvis
+export default Imageworkflow

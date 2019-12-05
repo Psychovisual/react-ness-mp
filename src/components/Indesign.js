@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Elvis = ({ isFrench }) => {
+const Indesign = ({ isFrench }) => {
 
     const language = isFrench ? 'FR' : 'DE'
     if (language === 'FR') {
         return(
-            <p>IFrame Elvis FR</p>
+            <p>IFrame InDesign FR</p>
         )
         } else {
         return(
-            <p>IFrame Elvis DE</p>
+            <p>IFrame InDesign DE</p>
         )
         }
 }
 
-export default Elvis
+export default Indesign
