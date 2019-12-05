@@ -9,7 +9,7 @@ const Menu = ({ actualLanguage, handleToggleLanguage }) => (
             <p>Language : {actualLanguage}</p>
         </div>
         <div> 
-            <button onClick={() => handleToggleLanguage()}>{actualLanguage}</button>
+            <button onClick={() => handleToggleLanguage()}>{actualLanguage === 'French' ? 'German' : 'French'}</button>
         </div>
     </div>
 )
