@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ness-mp-pages/static/css/main.dcddc07f.chunk.css",
-    "main.js": "/ness-mp-pages/static/js/main.785f751f.chunk.js",
-    "main.js.map": "/ness-mp-pages/static/js/main.785f751f.chunk.js.map",
-    "runtime-main.js": "/ness-mp-pages/static/js/runtime-main.28b4a29b.js",
-    "runtime-main.js.map": "/ness-mp-pages/static/js/runtime-main.28b4a29b.js.map",
-    "static/css/2.17e5ed98.chunk.css": "/ness-mp-pages/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.f708ea38.chunk.js": "/ness-mp-pages/static/js/2.f708ea38.chunk.js",
-    "static/js/2.f708ea38.chunk.js.map": "/ness-mp-pages/static/js/2.f708ea38.chunk.js.map",
-    "index.html": "/ness-mp-pages/index.html",
-    "precache-manifest.3388662523c2961b2b6b3c9bb676b1cb.js": "/ness-mp-pages/precache-manifest.3388662523c2961b2b6b3c9bb676b1cb.js",
-    "service-worker.js": "/ness-mp-pages/service-worker.js",
-    "static/css/2.17e5ed98.chunk.css.map": "/ness-mp-pages/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.dcddc07f.chunk.css.map": "/ness-mp-pages/static/css/main.dcddc07f.chunk.css.map",
-    "static/media/logo.svg": "/ness-mp-pages/static/media/logo.25bf045c.svg"
+    "main.css": "/react-ness-mp/static/css/main.dcddc07f.chunk.css",
+    "main.js": "/react-ness-mp/static/js/main.3012bb2c.chunk.js",
+    "main.js.map": "/react-ness-mp/static/js/main.3012bb2c.chunk.js.map",
+    "runtime-main.js": "/react-ness-mp/static/js/runtime-main.2f3fc12a.js",
+    "runtime-main.js.map": "/react-ness-mp/static/js/runtime-main.2f3fc12a.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/react-ness-mp/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.f708ea38.chunk.js": "/react-ness-mp/static/js/2.f708ea38.chunk.js",
+    "static/js/2.f708ea38.chunk.js.map": "/react-ness-mp/static/js/2.f708ea38.chunk.js.map",
+    "index.html": "/react-ness-mp/index.html",
+    "precache-manifest.b02b09265f0c7abf24c4bbc3f46c8f78.js": "/react-ness-mp/precache-manifest.b02b09265f0c7abf24c4bbc3f46c8f78.js",
+    "service-worker.js": "/react-ness-mp/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/react-ness-mp/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.dcddc07f.chunk.css.map": "/react-ness-mp/static/css/main.dcddc07f.chunk.css.map",
+    "static/media/logo.svg": "/react-ness-mp/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.28b4a29b.js",
+    "static/js/runtime-main.2f3fc12a.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.f708ea38.chunk.js",
     "static/css/main.dcddc07f.chunk.css",
-    "static/js/main.785f751f.chunk.js"
+    "static/js/main.3012bb2c.chunk.js"
   ]
 }
