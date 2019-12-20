@@ -40,7 +40,7 @@ class Navigation extends Component {
 
     render() {
         
-        const actualLanguage = this.state.isFrench ? 'French' : 'German';
+        const actualLanguage = this.state.isFrench ? 'Français' : 'Deutsch';
         
 
         const componentToRender = () => {
@@ -73,7 +73,8 @@ class Navigation extends Component {
         return (
             
             <div className="App">
-                <Navbar bg="light" expand="lg">
+                
+                <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="#home">NESS-MP</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -101,7 +102,7 @@ class Navigation extends Component {
                     <NavDropdown title="Epaper" id="basic-nav-dropdown">
                         <NavDropdown.Item onClick={() => this.setContent('sternwaldcockpit')}>Sternwald Cockpit</NavDropdown.Item>
                     </NavDropdown>
-
+                    
                     </Nav>
 
                     <Menu actualLanguage={actualLanguage} handleToggleLanguage={this.handleToggleLanguage} />
@@ -113,6 +114,7 @@ class Navigation extends Component {
                     
                 </Navbar.Collapse>
                 </Navbar>
+                
                 {/*<Route path="/elvis" exact component={Elvis} />
                 <Route path="/contentstation" exact component={Contentstation} />
                 <Route path="/brixwire" exact component={Brixwire} />*/}

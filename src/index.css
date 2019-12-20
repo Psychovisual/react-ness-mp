@@ -5,11 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 body > #root > div {
   margin: 0; 
   height: 100vh;
+  line-height: 1.2;
 }
 
 content {
@@ -19,4 +21,32 @@ content {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+iframe {
+  height: 91.3vh;
+}
+
+div.language {
+  color: rgba(255,255,255,.5);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  font-style: normal;
+  position: static;
+  transform: translateX(-20%);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+div.language-prompt{
+  position: relative;
+  
+}
+
+div.language-button{
+  height: 75%;
+  outline: none;
 }

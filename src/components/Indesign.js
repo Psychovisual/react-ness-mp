@@ -5,11 +5,11 @@ const Indesign = ({ isFrench }) => {
     const language = isFrench ? 'FR' : 'DE'
     if (language === 'FR') {
         return(
-            <p>IFrame InDesign FR</p>
+            <p>Pas de documentation à ce titre</p>
         )
         } else {
         return(
-            <p>IFrame InDesign DE</p>
+            <p><iframe id="conteniframe" title="myFrame" width="100%" src="https://docs.google.com/document/d/1EwMo5VOWLw1MTXTB0OnfRwqvQwQRn-uQ95WxfHbvtM4/edit"></iframe></p>
         )
         }
 }

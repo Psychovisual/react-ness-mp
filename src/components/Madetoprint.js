@@ -5,11 +5,11 @@ const Madetoprint = ({ isFrench }) => {
     const language = isFrench ? 'FR' : 'DE'
     if (language === 'FR') {
         return(
-            <p>IFrame Madetoprint FR</p>
+            <p>Pas de documentation à ce titre</p>
         )
         } else {
         return(
-            <p>IFrame Madetoprint DE</p>
+            <p><iframe id="conteniframe" title="myFrame" width="100%" src="https://docs.google.com/document/d/1Jq1V9njec1yv8FLQn3k9FtHxjk_5vG2SpywIabk-aSE/edit"></iframe></p>
         )
         }
 }
