@@ -1,6 +1,7 @@
 {
   "name": "ness-mp",
   "version": "0.1.0",
+  "homepage" : "http://psychovisual.github.io/react-ness-mp",
   "private": false,
   "dependencies": {
     "bootstrap": "^4.4.1",
